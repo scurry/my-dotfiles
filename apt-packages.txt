@@ -4,7 +4,6 @@ zsh
 audacity
 gimp
 thunderbird
-slack-desktop    # Alternatively, consider installing Slack via Snap
 calibre
 syncthing
 terminator
@@ -19,6 +18,7 @@ bleachbit            # System cleanup utility
 gparted              # Partition editor
 rclone
 speedtest-cli
+snap
 
 # ────────────── Development Tools ──────────────
 build-essential      # GCC, make, etc.
@@ -48,9 +48,3 @@ foliate              # Modern EPUB reader
 # ────────────── Backup & Display ──────────────
 timeshift            # System snapshot & restore
 redshift             # Adjust screen color temperature
-
-
-# The following aren’t in the Ubuntu apt repos; install via Snap/Flatpak instead:
-# bitwarden-cli      # e.g. `snap install bw`
-# obsidian           # e.g. `snap install obsidian --classic`
-# logseq             # e.g. `flatpak install flathub io.logseq.Logseq`

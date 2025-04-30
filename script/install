@@ -8,6 +8,7 @@ cd "$(dirname $0)"/..
 
 # 2) Install system deps
 sudo apt update && sudo apt upgrade -y && xargs -a apt-packages.txt sudo apt install -y
+xargs -a snap-packages.txt sudo snap install -y
 
 # 4) Oh-My-Zsh & plugins
 # ~/.dotfiles/install-omz.sh
