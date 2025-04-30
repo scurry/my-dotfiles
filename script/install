@@ -7,7 +7,7 @@ set -euo pipefail
 cd "$(dirname $0)"/..
 
 # 2) Install system deps
-sudo apt update && xargs -a apt-packages.txt sudo apt install -y
+sudo apt update && sudo apt upgrade -y && xargs -a apt-packages.txt sudo apt install -y
 
 # 4) Oh-My-Zsh & plugins
 # ~/.dotfiles/install-omz.sh
@@ -28,5 +28,5 @@ bin/dotbot/bin/dotbot -c install.conf.yaml
 echo "✅ Dotfiles applied!"
 
 # find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+# find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
