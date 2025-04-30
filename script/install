@@ -7,7 +7,7 @@ set -euo pipefail
 cd "$(dirname $0)"/..
 
 # 2) Install system deps
-sudo apt update && xargs -a ~/.dotfiles/apt-packages.txt sudo apt install -y
+sudo apt update && xargs -a apt-packages.txt sudo apt install -y
 
 # 4) Oh-My-Zsh & plugins
 # ~/.dotfiles/install-omz.sh
