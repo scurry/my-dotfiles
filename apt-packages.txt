@@ -37,7 +37,7 @@ postgresql              # Local DB
 # flatpak              # Universal Linux app installer
 
 # ────────────── Media & Graphics ──────────────
-openshot             # Video editor 
+# openshot             # Video editor 
 krita                # Digital painting 
 kdenlive             # Non-linear video editor 
 
