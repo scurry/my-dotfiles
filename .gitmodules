@@ -1,0 +1,3 @@
+[submodule "my-dotfiles/bin/dotbot"]
+	path = dotbot/bin/dotbot
+	url = https://github.com/anishathalye/dotbot.git

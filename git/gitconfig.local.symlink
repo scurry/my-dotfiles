@@ -1,0 +1,5 @@
+[user]
+        name = Scott Curry
+        email = scott.curry@libertymutual.com
+[credential]
+        helper = osxkeychain
