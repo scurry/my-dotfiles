@@ -18,8 +18,8 @@ bleachbit            # System cleanup utility
 gparted              # Partition editor
 rclone
 speedtest-cli
-# snap
-squashfs
+snapd
+# squashfs
 
 # ────────────── Development Tools ──────────────
 build-essential      # GCC, make, etc.
