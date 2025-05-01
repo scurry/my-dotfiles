@@ -9,10 +9,11 @@ cd "$(dirname $0)"/..
 # 2) Install system deps
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 [ -f /var/run/reboot-required ] && sudo reboot -f
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sed 's/#.*//' apt-packages.txt | grep -v '^\s*$'| xargs sudo apt install -y
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 sed 's/#.*//' flatpack-packages.txt | grep -v '^\s*$' | xargs sudo flatpak install flathub
 
 

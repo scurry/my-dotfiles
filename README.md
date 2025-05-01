@@ -32,3 +32,13 @@ To use these dotfiles, you can follow these steps:
    ```
 
 Feel free to customize these files to suit your preferences!
+
+
+For testing this on a container:
+
+1. Ensure container has SSH installed and a key
+   1. `ssh-keygen -t ed25519 -C "your_email@example.com"`
+1. Make sure git is installed `sudo apt install git`
+1. Make sure github has the ssh key or upload if not
+1. need url to call bootstrap directly:`curl -fsSL https://raw.githubusercontent.com/scurry/my-dotfiles/main/script/bootstrap | bash`
+
