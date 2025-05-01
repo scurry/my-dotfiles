@@ -26,12 +26,12 @@ fi
 cd "$DOTFILES"
 
 # ensure dotbot is present
-if [ ! -x dotbot/bin/dotbot ]; then
+if [ ! -x dotbot/bin/dotbot/bin/dotbot ]; then
   git submodule update --init --recursive
 fi
 
 # run the manifest
-dotbot/bin/dotbot -c install.conf.yaml
+dotbot/bin/dotbot/bin/dotbot -c install.conf.yaml
 echo "✅ Dotfiles applied!"
 
 # find the installers and run them iteratively
