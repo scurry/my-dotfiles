@@ -1,14 +1,12 @@
-# install.conf.yaml
-directives:
-  - clean: ['~']             # optional: remove stale symlinks
-  - link:
-      zsh/.zshrc: ~/.zshrc
-      git/.gitconfig: ~/.gitconfig
-      vim/.vimrc: ~/.vimrc
-  - shell:                  # commands to run once
-      - |
-        if [ ! -d ~/.oh-my-zsh ]; then
-          git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-        fi
-      - ~/.oh-my-zsh/tools/install.sh --unattended
-  - clean: []               # stop cleaning
+- clean: ['~']             # optional: remove stale symlinks
+- link:
+    zsh/.zshrc: ~/.zshrc
+    git/.gitconfig: ~/.gitconfig
+    vim/.vimrc: ~/.vimrc
+- shell:                  # commands to run once
+    - |
+      if [ ! -d ~/.oh-my-zsh ]; then
+        git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+      fi
+    - ~/.oh-my-zsh/tools/install.sh --unattended
+- clean: []               # stop cleaning
