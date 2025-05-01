@@ -19,6 +19,7 @@ gparted              # Partition editor
 rclone
 speedtest-cli
 # snap
+squashfs
 
 # ────────────── Development Tools ──────────────
 build-essential      # GCC, make, etc.
