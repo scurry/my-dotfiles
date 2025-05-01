@@ -7,12 +7,11 @@ set -euo pipefail
 cd "$(dirname $0)"/..
 
 # 2) Install system deps
-# grep -v '^\s*#' snap-packages.txt | xargs sudo snap install -y
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 [ -f /var/run/reboot-required ] && sudo reboot -f
 
-grep -v '^\s*#' apt-packages.txt | xargs sudo apt install -y
-grep -v '^\s*#' snap-packages.txt | xargs sudo snap install -y
+sed 's/#.*//' apt-packages.txt | grep -v '^\s*$'| xargs sudo apt install -y
+sed 's/#.*//' snap-packages.txt | grep -v '^\s*$' | xargs sudo snap install -y
 
 
 # 4) Oh-My-Zsh & plugins
