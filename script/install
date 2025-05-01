@@ -21,7 +21,7 @@ sed 's/#.*//' flatpack-packages.txt | grep -v '^\s*$' | xargs sudo flatpak insta
 
 DOTFILES="$HOME/.dotfiles"
 if [ ! -d "$DOTFILES" ]; then
-  git clone https://github.com/scurry/my-dotfiles.git "$DOTFILES"
+  git clone git@github.com:scurry/my-dotfiles.git "$DOTFILES"
 fi
 cd "$DOTFILES"
 
