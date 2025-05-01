@@ -3,12 +3,12 @@ curl
 zsh
 audacity
 gimp
-thunderbird
+
 calibre
 syncthing
 terminator
 vlc
-firefox
+
                  
 # ────────────── Essentials & System Utilities ──────────────
 htop                 # Interactive process viewer
