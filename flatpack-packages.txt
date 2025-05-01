@@ -2,7 +2,7 @@
 com.bitwarden.desktop
 # bitwarden-cli      
 md.obsidian.Obsidian          
-io.logseq.Logseq             # e.g. `flatpak install flathub io.logseq.Logseq`
+# io.logseq.Logseq             # e.g. `flatpak install flathub io.logseq.Logseq`
 com.slack.Slack -y
 org.mozilla.firefox
 org.mozilla.Thunderbird
