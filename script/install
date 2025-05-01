@@ -31,7 +31,7 @@ if [ ! -x dotbot/bin/dotbot ]; then
 fi
 
 # run the manifest
-bin/dotbot/bin/dotbot -c install.conf.yaml
+dotbot/bin/dotbot -c install.conf.yaml
 echo "✅ Dotfiles applied!"
 
 # find the installers and run them iteratively
