@@ -11,7 +11,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 [ -f /var/run/reboot-required ] && sudo reboot -f
 
 sed 's/#.*//' apt-packages.txt | grep -v '^\s*$'| xargs sudo apt install -y
-sed 's/#.*//' snap-packages.txt | grep -v '^\s*$' | xargs sudo snap install -y
+sed 's/#.*//' snap-packages.txt | grep -v '^\s*$' | xargs sudo snap install
 
 
 # 4) Oh-My-Zsh & plugins
