@@ -6,8 +6,6 @@ directives:
       git/.gitconfig: ~/.gitconfig
       vim/.vimrc: ~/.vimrc
   - shell:                  # commands to run once
-      - sudo apt update
-      - xargs -a apt-packages.txt sudo apt install -y
       - |
         if [ ! -d ~/.oh-my-zsh ]; then
           git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
