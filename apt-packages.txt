@@ -18,7 +18,7 @@ bleachbit            # System cleanup utility
 gparted              # Partition editor
 rclone
 speedtest-cli
-snapd
+# snapd
 # squashfs
 
 # ────────────── Development Tools ──────────────
@@ -35,7 +35,7 @@ jq                     # JSON query tool
 postgresql              # Local DB
 # pgadmin4              # You might need to add the pgadmin4 repository
 # postman             # Postman is not in the Ubuntu apt repos; install via Snap or Flatpak
-# flatpak              # Universal Linux app installer
+flatpak              # Universal Linux app installer
 
 # ────────────── Media & Graphics ──────────────
 # openshot             # Video editor 

@@ -1,9 +1,0 @@
-core
-# The following aren’t in the Ubuntu apt repos; install via Snap/Flatpak instead:
-bitwarden-cli      # e.g. `snap install bw`
-obsidian           # e.g. `snap install obsidian --classic`
-# logseq             # e.g. `flatpak install flathub io.logseq.Logseq`
-slack
-aws-cli
-firefox
-thunderbird
