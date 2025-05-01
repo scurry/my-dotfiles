@@ -1,4 +1,3 @@
-core
 # The following aren’t in the Ubuntu apt repos; install via Snap/Flatpak instead:
 com.bitwarden.desktop
 # bitwarden-cli      
