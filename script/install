@@ -11,8 +11,8 @@ cd "$(dirname $0)"/..
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 [ -f /var/run/reboot-required ] && sudo reboot -f
 
-grep -v '^\s*#' apt-packages.txt | xargs -a sudo apt install -y
-grep -v '^\s*#' snap-packages.txt | xargs -a sudo snap install -y
+grep -v '^\s*#' apt-packages.txt | xargs sudo apt install -y
+grep -v '^\s*#' snap-packages.txt | xargs sudo snap install -y
 
 
 # 4) Oh-My-Zsh & plugins
