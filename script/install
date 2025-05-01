@@ -26,7 +26,7 @@ fi
 cd "$DOTFILES"
 
 # ensure dotbot is present
-if [ ! -x bin/dotbot/bin/dotbot ]; then
+if [ ! -x dotbot/bin/dotbot ]; then
   git submodule update --init --recursive
 fi
 
